@@ -7,4 +7,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withMDX(nextConfig)
+export default withMDX(nextConfig)
