@@ -67,7 +67,7 @@ export function MobileNavigation() {
             <button type="button" onClick={() => close()} aria-label="Close navigation">
               <CloseIcon className="h-6 w-6 stroke-slate-500" />
             </button>
-            <Link href="/" className="ml-6" aria-label="Home page">
+            <Link href="/" className="ml-6 font-semibold" aria-label="Home page">
               KFOD
             </Link>
           </div>
