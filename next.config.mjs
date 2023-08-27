@@ -1,10 +1,10 @@
-import withMDX from '@next/mdx'
+import withMarkdoc from '@markdoc/next.js'
+
+import withSearch from './markdoc/search.mjs'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    mdxRs: true
-  }
+  pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx']
 }
 
-export default withMDX(nextConfig)
+export default withSearch(withMarkdoc({ schemaPath: './markdoc' })(nextConfig))
