@@ -10,11 +10,15 @@ export const navigation = [
   {
     title: 'Fahrplan',
     links: [
-      { title: 'Daten identifizieren', href: '/foo' },
+      { title: 'Daten identifizieren', href: '/docs/identify' },
       {
         title: 'Datenportal einrichten',
-        href: '/bar'
+        href: '/docs/setup'
       }
     ]
+  },
+  {
+    title: 'Anhang',
+    links: [{ title: 'Weiterführende Links', href: '/docs/more' }]
   }
 ]

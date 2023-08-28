@@ -47,7 +47,7 @@ export default function withSearch(nextConfig = {}) {
         test: __filename,
         use: [
           createLoader(function () {
-            const pagesDir = path.resolve('./src/app')
+            const pagesDir = path.resolve('./app')
             this.addContextDependency(pagesDir)
 
             const files = glob.sync('**/page.md', { cwd: pagesDir })
