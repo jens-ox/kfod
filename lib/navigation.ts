@@ -19,7 +19,6 @@ export const navigation = [
         title: 'Datenportal einrichten',
         href: '/kfod/setup'
       }
-      }
     ]
   },
   {
