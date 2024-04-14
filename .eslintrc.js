@@ -19,7 +19,6 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'react/self-closing-comp': ['error'],
-    'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-only-tests/no-only-tests': 'error',
     'tailwindcss/classnames-order': 'error',
     'tailwindcss/enforces-shorthand': 'error',

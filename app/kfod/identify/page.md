@@ -6,7 +6,7 @@ Als erster Schritt einer Open Data-Strategie sollten bereits existierende Daten 
 
 ## Daten für den Start
 
-Eine vollständige Übersicht über potenzielle Daten liefert der [Musterdatenkatalog der Bertelsmann-Stiftung](https://bertelsmannstift.github.io/Musterdatenkatalog/def/musterdatensatz.html). Einige konkrete Beispiele:
+Eine vollständige Übersicht über potenzielle Daten liefert der [Musterdatenkatalog der Bertelsmann-Stiftung](/mdk). Einige konkrete Beispiele:
 
 - Abfallkalender
 - Einwohnerstatistiken

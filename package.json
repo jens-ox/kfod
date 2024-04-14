@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mdk": "bun utils/mdk.ts"
   },
   "dependencies": {
     "@algolia/autocomplete-core": "^1.11.0",
@@ -28,19 +29,24 @@
     "js-yaml": "^4.1.0",
     "lucide-react": "^0.269.0",
     "next": "13.4.19",
+    "papaparse": "^5.4.1",
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-highlight-words": "^0.20.0",
     "simple-functional-loader": "^1.2.1",
     "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "undici": "^6.13.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "@types/js-yaml": "^4.0.5",
     "@types/mdx": "^2.0.7",
+    "@types/papaparse": "^5.3.14",
     "@types/react-highlight-words": "^0.16.4",
+    "@types/uuid": "^9.0.8",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
     "eslint-config-prettier": "^9.0.0",
