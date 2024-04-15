@@ -22,6 +22,32 @@ export const navigation = [
     ]
   },
   {
+    title: 'Open Data in Deutschland',
+    links: [
+      { title: 'Projekte', href: '/odid/projects' },
+      { title: 'Produkte', href: '/odid/products' },
+      { title: 'Firmen und Institutionen', href: '/odid/entities' },
+      { title: 'Standards', href: '/odid/standards' }
+    ]
+  },
+  {
+    title: 'Datenplattformen und -portale',
+    links: [
+      { title: 'Bundesebene', href: '/platforms/national' },
+      { title: 'Länder', href: '/platforms/state' },
+      { title: 'Kommunen etc.', href: '/platforms/municipal' }
+    ]
+  },
+  {
+    title: 'Technologische Basis',
+    links: [
+      {
+        title: 'DCAT-AP.de',
+        href: '/technology/dcat'
+      }
+    ]
+  },
+  {
     title: 'Anhang',
     links: [{ title: 'Weiterführende Links', href: '/kfod/more' }]
   }

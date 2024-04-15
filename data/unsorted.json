@@ -1,0 +1,167 @@
+[
+  {
+    "author": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "maintainer": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "name": "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg-2016",
+    "organization": {
+      "name": "transparenzportal-hamburg",
+      "title": "Transparenzportal Hamburg",
+      "description": "Transparenzportal Hamburg"
+    },
+    "title": "Grundsicherung im Alter und bei Erwerbsminderung in Hamburg 2016",
+    "url": "http://www.statistik-nord.de",
+    "groups": [
+      "soci"
+    ],
+    "tags": [
+      "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg",
+      "sozialleistungen"
+    ],
+    "alternate_identifier": "[\"K I 14 - j 16 HH\"]",
+    "author_contacttype": "Organization",
+    "contact_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "contributorID": "http://dcat-ap.de/def/contributors/transparenzportalHamburg",
+    "geocodingText": "Freie und Hansestadt Hamburg",
+    "maintainer_contacttype": "Organization",
+    "metadata_harvested_portal": "http://suche.transparenz.hamburg.de/",
+    "originator_contacttype": "Organization",
+    "originator_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "politicalGeocodingLevelURI": "http://dcat-ap.de/def/politicalGeocoding/level/state",
+    "politicalGeocodingURI": "http://dcat-ap.de/def/politicalGeocoding/regionalKey/020000000000",
+    "publisher_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "source": "http://www.statistik-nord.de/index.php?eID=stan_xml&products=4,6&state=1",
+    "harvest_source_title": "Hamburg-Harvester"
+  },
+  {
+    "author": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "maintainer": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "name": "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg-2015",
+    "organization": {
+      "name": "transparenzportal-hamburg",
+      "title": "Transparenzportal Hamburg",
+      "description": "Transparenzportal Hamburg"
+    },
+    "title": "Grundsicherung im Alter und bei Erwerbsminderung in Hamburg 2015",
+    "url": "http://www.statistik-nord.de",
+    "groups": [
+      "soci"
+    ],
+    "tags": [
+      "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg",
+      "sozialleistungen"
+    ],
+    "alternate_identifier": "[\"K I 14 - j 15 HH\"]",
+    "author_contacttype": "Organization",
+    "contact_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "contributorID": "http://dcat-ap.de/def/contributors/transparenzportalHamburg",
+    "geocodingText": "Freie und Hansestadt Hamburg",
+    "maintainer_contacttype": "Organization",
+    "metadata_harvested_portal": "http://suche.transparenz.hamburg.de/",
+    "originator_contacttype": "Organization",
+    "originator_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "politicalGeocodingLevelURI": "http://dcat-ap.de/def/politicalGeocoding/level/state",
+    "politicalGeocodingURI": "http://dcat-ap.de/def/politicalGeocoding/regionalKey/020000000000",
+    "publisher_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "source": "http://www.statistik-nord.de/index.php?eID=stan_xml&products=4,6&state=1",
+    "harvest_source_title": "Hamburg-Harvester"
+  },
+  {
+    "author": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "maintainer": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "name": "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg-2014",
+    "organization": {
+      "name": "transparenzportal-hamburg",
+      "title": "Transparenzportal Hamburg",
+      "description": "Transparenzportal Hamburg"
+    },
+    "title": "Grundsicherung im Alter und bei Erwerbsminderung in Hamburg 2014",
+    "url": "http://www.statistik-nord.de",
+    "groups": [
+      "soci"
+    ],
+    "tags": [
+      "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg",
+      "sozialleistungen"
+    ],
+    "alternate_identifier": "[\"K I 14 - j 14 HH\"]",
+    "author_contacttype": "Organization",
+    "contact_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "contributorID": "http://dcat-ap.de/def/contributors/transparenzportalHamburg",
+    "geocodingText": "Freie und Hansestadt Hamburg",
+    "maintainer_contacttype": "Organization",
+    "metadata_harvested_portal": "http://suche.transparenz.hamburg.de/",
+    "originator_contacttype": "Organization",
+    "originator_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "politicalGeocodingLevelURI": "http://dcat-ap.de/def/politicalGeocoding/level/state",
+    "politicalGeocodingURI": "http://dcat-ap.de/def/politicalGeocoding/regionalKey/020000000000",
+    "publisher_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "source": "http://www.statistik-nord.de/index.php?eID=stan_xml&products=4,6&state=1",
+    "harvest_source_title": "Hamburg-Harvester"
+  },
+  {
+    "author": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "maintainer": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "name": "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg-2012",
+    "organization": {
+      "name": "transparenzportal-hamburg",
+      "title": "Transparenzportal Hamburg",
+      "description": "Transparenzportal Hamburg"
+    },
+    "title": "Grundsicherung im Alter und bei Erwerbsminderung in Hamburg 2012",
+    "url": "http://www.statistik-nord.de",
+    "groups": [
+      "soci"
+    ],
+    "tags": [
+      "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg",
+      "sozialleistungen"
+    ],
+    "alternate_identifier": "[\"K I 14 - j 12 HH\"]",
+    "author_contacttype": "Organization",
+    "contact_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "contributorID": "http://dcat-ap.de/def/contributors/transparenzportalHamburg",
+    "geocodingText": "Freie und Hansestadt Hamburg",
+    "maintainer_contacttype": "Organization",
+    "metadata_harvested_portal": "http://suche.transparenz.hamburg.de/",
+    "originator_contacttype": "Organization",
+    "originator_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "politicalGeocodingLevelURI": "http://dcat-ap.de/def/politicalGeocoding/level/state",
+    "politicalGeocodingURI": "http://dcat-ap.de/def/politicalGeocoding/regionalKey/020000000000",
+    "publisher_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "source": "http://www.statistik-nord.de/index.php?eID=stan_xml&products=4,6&state=1",
+    "harvest_source_title": "Hamburg-Harvester"
+  },
+  {
+    "author": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "maintainer": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "name": "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg-2013",
+    "organization": {
+      "name": "transparenzportal-hamburg",
+      "title": "Transparenzportal Hamburg",
+      "description": "Transparenzportal Hamburg"
+    },
+    "title": "Grundsicherung im Alter und bei Erwerbsminderung in Hamburg 2013",
+    "url": "http://www.statistik-nord.de",
+    "groups": [
+      "soci"
+    ],
+    "tags": [
+      "grundsicherung-im-alter-und-bei-erwerbsminderung-in-hamburg",
+      "sozialleistungen"
+    ],
+    "alternate_identifier": "[\"K I 14 - j 13 HH\"]",
+    "author_contacttype": "Organization",
+    "contact_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "contributorID": "http://dcat-ap.de/def/contributors/transparenzportalHamburg",
+    "geocodingText": "Freie und Hansestadt Hamburg",
+    "maintainer_contacttype": "Organization",
+    "metadata_harvested_portal": "http://suche.transparenz.hamburg.de/",
+    "originator_contacttype": "Organization",
+    "originator_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "politicalGeocodingLevelURI": "http://dcat-ap.de/def/politicalGeocoding/level/state",
+    "politicalGeocodingURI": "http://dcat-ap.de/def/politicalGeocoding/regionalKey/020000000000",
+    "publisher_name": "Statistisches Amt für Hamburg und Schleswig-Holstein",
+    "source": "http://www.statistik-nord.de/index.php?eID=stan_xml&products=4,6&state=1",
+    "harvest_source_title": "Hamburg-Harvester"
+  }
+]
