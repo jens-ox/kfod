@@ -266,14 +266,33 @@ const data = await res.body.text()
 const parsed = parse<Record<string, string>>(data, { header: true })
 
 // clean raw data
-const cleaned: Cleaned[] = parsed.data
-  .map((e) => ({
-    title: e['dct:title'],
-    url: e['dcat:landingpage'],
-    tags: e['dcat:theme'] !== undefined ? e['dcat:theme'].split(', ').filter((t: string) => /[a-zA-Z]/g.test(t)) : [],
-    key: e.MUSTERDATENSATZ
-  }))
-  .filter((e) => e.key !== undefined)
+const cleaned: Cleaned[] = (
+  await Promise.all(
+    parsed.data.map(async (e) => {
+      const url = e['dcat:landingpage']
+      let statusCode = 404
+      if (url !== undefined) {
+        try {
+          const res = await request(url)
+          statusCode = res.statusCode
+          console.log('url', url, 'code ', statusCode)
+        } catch (error) {
+          console.error('url: ', url)
+          console.error(error)
+        }
+      }
+
+      return {
+        title: e['dct:title'],
+        url,
+        tags:
+          e['dcat:theme'] !== undefined ? e['dcat:theme'].split(', ').filter((t: string) => /[a-zA-Z]/g.test(t)) : [],
+        key: e.MUSTERDATENSATZ,
+        statusCode
+      }
+    })
+  )
+).filter((e) => e.key !== undefined && e.statusCode !== 404)
 
 // group by key and collect tags
 const grouped = cleaned.reduce(

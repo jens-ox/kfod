@@ -50,7 +50,7 @@ export const MdkRenderer = ({ mdk }: { mdk: MDK }) => {
       <div className="mt-8">
         <input
           placeholder="Nach Musterdatensätzen suchen"
-          className="w-full rounded-lg border border-gray-200 px-4 py-2 text-sm focus:outline-none focus:ring-1"
+          className="w-full rounded-lg border border-gray-200 px-4 py-2 text-sm focus:outline-none focus:ring-2"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
