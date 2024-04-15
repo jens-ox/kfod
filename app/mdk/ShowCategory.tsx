@@ -25,7 +25,10 @@ export const ShowCategory = ({ category }: { category: Category }) => {
             <div className="flex flex-col gap-4">
               {category.entries.map((e) => (
                 <div key={e.key} className="flex flex-col gap-4 rounded-lg border border-gray-300 px-4 py-2">
-                  <h3 className="font-medium">{e.key}</h3>
+                  <div>
+                    <h3 className="font-medium">{e.key}</h3>
+                    <p className="text-sm text-gray-600">{e.description}</p>
+                  </div>
                   <div className="flex flex-wrap items-center gap-2 text-xs">
                     {e.tags.map((t) => (
                       <span className="rounded-full border border-gray-200 bg-gray-100 px-1" key={`${e.key}-${t}`}>

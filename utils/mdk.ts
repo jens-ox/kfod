@@ -15,15 +15,20 @@ import { validate as uuidValidate } from 'uuid'
 const URL =
   'https://raw.githubusercontent.com/bertelsmannstift/Musterdatenkatalog/master/musterdatenkatalog/musterdatenkatalog_v4.csv'
 
+const URL_GROUPS =
+  'https://huggingface.co/datasets/and-effect/MDK_taxonomy/raw/main/2023-05-17_musterdatenkatalog.jsonld'
+
 type Cleaned = {
   title: string
   url: string
   tags: string[]
   key: string
+  description: string
 }
 
 type Group = {
   key: string
+  description: string
   tags: string[]
   entries: Array<{
     title: string
@@ -265,34 +270,54 @@ const data = await res.body.text()
 
 const parsed = parse<Record<string, string>>(data, { header: true })
 
+const resGroups = await request(URL_GROUPS)
+const dataGroups = (await resGroups.body.json()) as unknown[]
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const cleanedGroups = dataGroups.map((e: any) => ({
+  title: e['http://www.w3.org/2004/02/skos/core#prefLabel']?.find(
+    (x: Record<string, string>) => x['@language'] === 'de'
+  )!['@value'],
+  description: e['http://www.w3.org/2004/02/skos/core#definition']?.[0]?.['@value']
+}))
+
 // clean raw data
 const cleaned: Cleaned[] = (
   await Promise.all(
-    parsed.data.map(async (e) => {
-      const url = e['dcat:landingpage']
-      let statusCode = 404
-      if (url !== undefined) {
-        try {
-          const res = await request(url)
-          statusCode = res.statusCode
-          console.log('url', url, 'code ', statusCode)
-        } catch (error) {
-          console.error('url: ', url)
-          console.error(error)
+    parsed.data
+      .filter((e) => e.MUSTERDATENSATZ !== undefined)
+      .map(async (e) => {
+        const url = e['dcat:landingpage']
+        let statusCode = 404
+        if (url !== undefined) {
+          try {
+            const res = await request(url)
+            statusCode = res.statusCode
+            console.log('url', url, 'code ', statusCode)
+          } catch (error) {
+            console.error('url: ', url)
+            console.error(error)
+          }
         }
-      }
 
-      return {
-        title: e['dct:title'],
-        url,
-        tags:
-          e['dcat:theme'] !== undefined ? e['dcat:theme'].split(', ').filter((t: string) => /[a-zA-Z]/g.test(t)) : [],
-        key: e.MUSTERDATENSATZ,
-        statusCode
-      }
-    })
+        const title = e['dct:title']
+        const key = e.MUSTERDATENSATZ
+        const subCategory = key.split(' - ').slice(1).join(' - ')
+
+        const description = cleanedGroups.find((group) => group.title === subCategory)
+
+        return {
+          title,
+          url,
+          tags:
+            e['dcat:theme'] !== undefined ? e['dcat:theme'].split(', ').filter((t: string) => /[a-zA-Z]/g.test(t)) : [],
+          key,
+          description: description ? description.description : '',
+          statusCode
+        }
+      })
   )
-).filter((e) => e.key !== undefined && e.statusCode !== 404)
+).filter((e) => e.statusCode !== 404)
 
 // group by key and collect tags
 const grouped = cleaned.reduce(
@@ -333,6 +358,7 @@ const grouped = cleaned.reduce(
     } else {
       acc[key] = {
         tags: e.tags.map((t) => [t, 1]),
+        description: e.description,
         entries: [e]
       }
     }
@@ -343,6 +369,7 @@ const grouped = cleaned.reduce(
     {
       tags: Array<[string, number]>
       entries: Cleaned[]
+      description: string
     }
   >
 )
@@ -350,6 +377,7 @@ const grouped = cleaned.reduce(
 const filteredTags = Object.entries(grouped).map(([key, o]) => ({
   key,
   tags: filterTags(o.tags),
+  description: o.description,
   entries: o.entries
     .filter((e, _, self) => {
       // filter out entries without tags if this group has at least one entry with tags
