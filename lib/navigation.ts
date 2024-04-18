@@ -4,7 +4,8 @@ export const navigation = [
     links: [
       { title: 'Übersicht', href: '/' },
       { title: 'Was ist Open Data?', href: '/kfod/what' },
-      { title: 'Warum Open Data?', href: '/kfod/why' }
+      { title: 'Warum Open Data?', href: '/kfod/why' },
+      { title: 'Datenqualität', href: '/kfod/quality' }
     ]
   },
   {

@@ -20,7 +20,7 @@ export const MarkdownIcon = ({ icon, variant }: MarkdownIconProps) => {
   return (
     <span
       className={clsx(
-        'inline-flex h-6 w-6 items-center justify-center rounded-full p-0.5',
+        'inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full p-0.5',
         variant === 'good' && 'bg-green-100',
         variant === 'bad' && 'bg-red-100'
       )}
